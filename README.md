@@ -21,16 +21,19 @@ A simple Python script to track and detect new videos on a YouTube channel.
 
 ```bash
 git clone https://github.com/Grise3/Youtube-Video-Checker.git
-cd youtube-video-tracker
-pip install requests
+cd Youtube-Video-Checker
+pip install requests json
 ```
 
+## Import
+```python
+from check_new_video import check_new_video
+```
 ## Usage
 
 ```python
-# Usage example
 channel_url = 'https://www.youtube.com/@ChannelName'
-result = main(channel_url)
+result = check_new_video(channel_url)
 print(result)
 ```
 
@@ -46,9 +49,9 @@ print(result)
 ```
 Youtube-Video-Checker/
 │
-├── main.py           # Main script
-├── youtubers.json    # Save file
-└── README.md         # Documentation
+├── check_new_video.py # Main script
+├── youtubers.json     # Save file
+└── README.md          # This file
 ```
 
 ## Json responses
