@@ -36,7 +36,7 @@ def save_youtuber(json_file, channel_url, video_url):
     with open(json_file, 'w') as file:
         json.dump(data, file, indent=2)
 
-def main(channel_url, json_file='youtubers.json'):
+def check_new_video(channel_url, json_file='youtubers.json'):
     last_video_url = load_youtuber(json_file, channel_url)
     latest_video_url = check_youtube_video(channel_url)
 
